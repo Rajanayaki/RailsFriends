@@ -1,0 +1,8 @@
+<%= render @friend %>
+
+<div>
+  <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-dark" %>
+  <%= link_to "Back", friends_path , class: "btn btn-dark"%>
+
+  <%= button_to "Delete", @friend, method: :delete %>
+</div>
